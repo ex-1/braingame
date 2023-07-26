@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	stroke: none;
+	border: none;
+	outline: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+
+body {
+	background-color: #0f0f0f;
+	color: #f0f0f0;
+	font-family: 'Inconsolata', monospace;
+}
+
+.content, 
+.note {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	margin-top: 75px;
+}
+
+.content pre {
+	display: block;
+	font-size: 26px;
+	line-height: 28px;
+	text-align: center;
+	user-select: none;
+
+}
+
+.note span {
+	line-height: 22px;
+	font-size: 18px;
+}
+
+b#num {
+	text-transform: uppercase;
+	color: #a21bff;
+}
+
+b#game {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.data-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	margin: 5px 0;
+	min-width: 400px;
+	user-select: none;
+}
+
+.lvl,
+.wrongs {
+	padding: 0.5rem;
+	transition: all 0.3s ease-in;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.number {
+	color: #a21bff;
+	font-size: 28px;
+	margin: 5px 0;
+	user-select: none;
+	letter-spacing: 15px;
+	text-align: center;
+}
+
+.input-box {
+	min-width: 320px;
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.input-box span {
+	font-size: 22px;
+}
+
+.input-box input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid #f0f0f0;
+	max-width: 180px;
+	height: auto;
+	color: #a21bff;
+	font-size: 22px;
+	text-align: center;
+	caret-color: #f0f0f0;
+	letter-spacing: 8px;
+
+}
+
+.input-box input::placeholder {
+	font-size: 14px;
+	opacity: 0.5;
+	color: #f0f0f0;
+	letter-spacing: normal;
+	font-weight: bold;
+}
+
+.btn {
+	margin: 15px 0;
+	padding: 0.5rem;
+	min-width: 100px;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: transparent;
+	color: #f0f0f0;
+	border: 3px solid #f0f0f0;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #a21bff50;
+}
+
+@keyframes wrongg {
+	20% {
+		transform: scale(2);
+		color: #ff0101;
+	}
+
+	40% {
+		transform: scale(2) rotate(15deg);
+		color: #ff0101;
+	}
+
+	60% {
+		transform: scale(2) rotate(-15deg);
+		color: #ff0101;
+	}
+
+	80% {
+		transform: none;
+		color: #ff0101;
+	}
+}
